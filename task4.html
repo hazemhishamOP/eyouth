@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Accessible Form</title>
+</head>
+<body>
+
+  <form action="#" method="post" novalidate>
+
+    <fieldset>
+      <legend>Contact Information</legend>
+
+
+      <div>
+        <label for="name">Full Name *</label><br>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          aria-describedby="name-desc"
+          aria-invalid="false"
+        >
+        <p id="name-desc">Enter your full name.</p>
+      </div>
+
+      
+      <div>
+        <label for="email">Email Address *</label><br>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+          aria-describedby="email-desc"
+          aria-invalid="false"
+        >
+        <p id="email-desc">
+          Email must be in the format name@example.com.
+        </p>
+      </div>
+
+      <div>
+        <label for="phone">Phone Number *</label><br>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          required
+          pattern="^\+?[0-9]{10,15}$"
+          aria-describedby="phone-desc"
+          aria-invalid="false"
+        >
+        <p id="phone-desc">
+          Enter 10–15 digits. Country code is optional.
+        </p>
+      </div>
+
+     
+      <div>
+        <label for="date">Preferred Contact Date</label><br>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          aria-describedby="date-desc"
+        >
+        <p id="date-desc">
+          Choose a convenient date.
+        </p>
+      </div>
+
+   
+      <div>
+        <label for="message">Message *</label><br>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          required
+          aria-describedby="message-desc"
+          aria-invalid="false"
+        ></textarea>
+        <p id="message-desc">
+          Please enter your message.
+        </p>
+      </div>
+
+    </fieldset>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
+
+    
+</body>
+</html>
