@@ -1,0 +1,353 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 250vh;
+    background-color: rgb(1, 1, 51);
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px
+}
+
+.navbar-title {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 25%
+}
+
+.navbar-units {
+    color: white;
+    border-radius: 10px;
+    width: 150px;
+    height: 70px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgb(53, 51, 51);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    right: 25%
+}
+
+.navbar-units:hover {
+    background-color: mediumaquamarine;
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 25px rgba(0, 255, 106, 0.8)
+}
+
+.header {
+    width: 100vw;
+    height: 190px;
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+
+
+
+
+}
+
+.title {
+
+    color: white;
+    font-size: 60px;
+    align-items: center;
+
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    left: 26%;
+}
+
+.input {
+    color: white;
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2B2F45;
+
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    position: absolute;
+    left: 30%;
+    bottom: -43%;
+
+
+}
+
+.btn {
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: rgb(129, 127, 255);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 57%;
+    bottom: -43%;
+
+}
+
+.btn:hover {
+    background-color: rgb(25, 38, 107);
+    cursor: pointer;
+    transform: translateY(5px);
+
+
+}
+
+
+.weather-info {
+
+    background: linear-gradient(to right, #8d52ec, #4a1ee9);
+    width: 800px;
+    height: 300px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 17%;
+    left: 15%
+}
+
+.weather-info-title {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+
+    position: absolute;
+    top: 35%;
+    left: 30px;
+}
+
+.weather-info-date {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    position: absolute;
+    top: 55%;
+    left: 30px;
+}
+
+.weather-info-temperature {
+    color: white;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 90px;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+}
+
+.weather-info-logo {
+
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+}
+
+.weather-info-2 {
+    width: 400px;
+    height: 560px;
+    background-color: #2B2F45;
+    border-radius: 10px;
+    position: absolute;
+    top: 17%;
+    left: 60%
+}
+
+.hourly-forecast {
+    color: white;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    padding: 15px;
+
+
+
+}
+
+.hourly-forecast-select {
+    color: white;
+    background-color: #3A3F5C;
+
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    width: 90px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Oswald", sans-serif;
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    left: 60%;
+    bottom: 9%;
+
+
+
+}
+
+.hourly-forecast-select:hover {
+
+    cursor: pointer;
+    background-color: rgb(61, 60, 60);
+}
+
+.hourly-forecast-box {
+    background-color: #3A3F5C;
+    border-radius: 10px;
+    border: none;
+    width: 380px;
+    height: 50px;
+    margin-top: 10px;
+    position: relative;
+    bottom: 7%;
+    left: 2%;
+    right: 2%;
+
+
+
+}
+
+.hour {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    position: relative;
+    top: 10%;
+
+}
+
+.temp {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    left: 80%;
+    bottom: 35%
+}
+
+.rectangle-div {
+    width: 800px;
+    height: 200px;
+    display:flex;
+    position: absolute;
+    top: 31%;
+    left: 15%
+    
+}
+.rectangle{
+    outline: #3A3F5C;
+    margin: 10px;
+    background-color: #3A3F5C;
+    height: 100px;
+    width: 200px;
+    border-radius: 12px;
+    text-align: center;
+    
+
+}
+.rectangle-text1{
+   
+    color: white;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    font-size:large;
+    position: relative;
+    top:15px;
+    right:20px
+    
+
+
+}
+.rectangle-text2{
+
+    color: white;
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+}
+
+/* Daily forecast section */
+.daily-forecast-section{
+    position: absolute;
+    top: 37%;
+    left: 15%;
+    width: 80vw;
+}
+
+.daily-forecast-title{
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.daily-cards{
+    display: flex;
+    gap: 15px;
+}
+
+.daily-card{
+    background-color: #2B2F45;
+    border-radius: 12px;
+    width: 90px;
+    padding: 12px 8px;
+    text-align: center;
+    color: white;
+    font-family: "Oswald", sans-serif;
+}
+
+.day-name{
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.day-icon{
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.day-temps{
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.low-temp{
+    opacity: 0.7;
+}
